@@ -1,4 +1,3 @@
-es (20 sloc)  304 Bytes
 #include "holberton.h"
 
 /**
