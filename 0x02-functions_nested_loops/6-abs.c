@@ -1,23 +1,28 @@
 #include "holberton.h"
+
 /**
- * _abs - computes the absolute value of an integer
- * @c: interger to test
+ * _abs - finds the absolute value of an integer
+ * @n: number to evaluate
  *
- * Description: computes the absolute value of an integer
- * Return: return computed value
+ * Return: n if n is greater than zero,
+ * 0 if n is zero
+ * absolute value of n if n is less than zero
+ *
  */
-int _abs(int c)
+int _abs(int n)
 {
-	if (c < 0)
+	int result;
+
+	if (n > 0)
 	{
-		return (c * -1);
-	}
-	else if (c > 0)
+		result = n;
+	} else if (n < 0)
 	{
-		return (c);
-	}
-	else
+		result = -n;
+	} else
 	{
-		return (0);
+		result = 0;
 	}
+
+	return (result);
 }
