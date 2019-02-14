@@ -2,27 +2,14 @@
 
 /**
  * _abs - finds the absolute value of an integer
- * @n: number to evaluate
+ * @two: number to evaluate
  *
- * Return: n if n is greater than zero,
- * 0 if n is zero
- * absolute value of n if n is less than zero
- *
+ * Return: returns the absolute value
+ *I check if two is less than zero
  */
-int _abs(int n)
+int _abs(int two)
 {
-	int result;
-
-	if (n > 0)
-	{
-		result = n;
-	} else if (n < 0)
-	{
-		result = -n;
-	} else
-	{
-		result = 0;
-	}
-
-	return (result);
+	if (two < 0)
+		two = two * -1;
+	return (two);
 }
