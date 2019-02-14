@@ -2,17 +2,15 @@
 
 /**
  * _islower - checks lowercase c.
- *@c: It's the variable and you can check if c is lowercase or not.
+ *@letter: checking if letter is lowercase or not
  *
- *
- * Return: 0 or 1
+ * Return: 0-not lowercase 1- is lowercase
  */
-int _islower(int c)
+int _islower(int letter)
 {
-	if (c >= 97 &&  c <= 122)
+	if (letter >= 97 &&  letter <= 122)
 	{
 		return (1);
 	}
-	else
 		return (0);
 }
