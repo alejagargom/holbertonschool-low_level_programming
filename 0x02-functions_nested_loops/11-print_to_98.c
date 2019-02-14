@@ -2,8 +2,8 @@
 #include "holberton.h"
 
 /**
- * print_to_98 if it is less it is added if it is greater it is subtracted
- * @luna:
+ * print_to_98 - if it is less it is added if it is greater it is subtracted
+ * @luna: I print the numbers up to 98
  */
 void print_to_98(int luna)
 {
