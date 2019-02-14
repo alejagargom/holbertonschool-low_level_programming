@@ -1,49 +1,36 @@
 #include "holberton.h"
 
 /**
- * times_table - prints the times table up to the  9's
+ * times_table - printing the columns and rows
  *
- * Return: nothing
  */
 void times_table(void)
 {
-	int x;
-	int y;
-	int xTens, xOnes;
-	int result;
+	int fil, colmu, finish;
 
-	for (x = 0; x < 10; x++)
+	for (fil =  0 ; fil <= 9; fil++)
 	{
-		for (y = 0; y < 10; y++)
+		for (colmu = 0 ; colmu <= 9; colmu++)
 		{
-			result = x * y;
-			xTens = result / 10;
-			xOnes = result % 10;
-
-			/* For before the number */
-			if ((xTens > 0))
+			finish = fil * colmu;
+			if (finish < 10)
 			{
-				_putchar(xTens + '0');
-			} else if (y != 0)
-			{
-				_putchar(' ');
-			}
-
-
-			/* Output Ones digit */
-			_putchar(xOnes + '0');
-
-			/* Output proper separator */
-			if (y < 9)
-			{
+				if (colmu != 0)
+				{
 				_putchar(',');
-			}
-
-			if ((xOnes < 10) && (y < 9))
-			{
 				_putchar(' ');
+				_putchar(' ');
+				}
+				_putchar(finish + '0');
+			}
+			else
+			{
+				_putchar (',');
+				_putchar(' ');
+				_putchar((finish / 10) + '0');
+				_putchar((finish % 10) + '0');
 			}
 		}
-		_putchar('\n');
+		_putchar ('\n');
 	}
 }
