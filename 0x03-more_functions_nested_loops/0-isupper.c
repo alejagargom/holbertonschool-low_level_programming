@@ -2,13 +2,13 @@
 
 /**
  * _isupper- checks JA.
- *@JA: checking if JA is  JA UPPERCASE
+ *@ja: checking if ja is  ja UPPERCASE
  *
  * Return:A  UPPERCASE Z
  */
-int _isupper(int JA)
+int _isupper(int ja)
 {
-	if (JA >= 'A' &&  JA <= 'Z')
+	if (ja >= 'A' &&  ja <= 'Z')
 	{
 		return (1);
 	}
