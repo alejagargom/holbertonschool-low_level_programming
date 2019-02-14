@@ -3,15 +3,11 @@
 /**
  * add - add 2 integers
  *
- * @a: first integer to add
- * @b: second integer to add
+ * @luna: first integer to add
+ * @boli: second integer to add
  * Return: result of 2 integers
  */
-int add(int a, int b)
+int add(int luna, int boli)
 {
-	int result;
-
-	result = a + b;
-
-	return (result);
+	return (luna + boli);
 }
