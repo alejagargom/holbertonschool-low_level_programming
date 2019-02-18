@@ -1,12 +1,11 @@
 #include "holberton.h"
 int main(void)
 {
-char holberton[] = "Holberton";
-int c;
-for (c = 0; c < 9; c++)
+char a[] = "Holberton\n";
+int i;
+for (i = 0; i < 10; i++)
 {
-_putchar(holberton[c]);
+_putchar(a[i]);
 }
-_putchar('\n');
 return (0);
 }
