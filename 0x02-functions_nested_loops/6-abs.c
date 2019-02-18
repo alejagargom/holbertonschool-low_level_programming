@@ -23,5 +23,5 @@ int _abs(int n)
 		output = 0;
 	}
 
-	return (outout);
+	return (output);
 }
