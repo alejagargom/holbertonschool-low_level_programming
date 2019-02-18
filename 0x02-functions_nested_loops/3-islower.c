@@ -1,5 +1,4 @@
 #include "holberton.h"
-
 /**
  * int_islower - checks for lower case characters
  * @c: variable to evaluate
