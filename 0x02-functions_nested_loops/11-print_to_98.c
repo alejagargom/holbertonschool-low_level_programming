@@ -1,22 +1,20 @@
 #include "holberton.h"
 #include <stdio.h>
-
 /**
- * print_to_98  - print numbers n to 98
- * @n: number to calculate
- *
- * Return: print to output numbers n to 98 followed and a newline.
- */
+  * print_to_98 - function that prints all natural numbers from n to 98
+  * @n: takes in an integer
+  *
+  */
 void print_to_98(int n)
 {
-	int cal;
+	int i;
 
 	if (n > 98)
 	{
-		for (cal = n; cal > 97; cal--)
+		for (i = n; i > 97; i--)
 		{
-			printf("%d", cal);
-			if (cal != 98)
+			printf("%d", i);
+			if (i != 98)
 			{
 				printf(", ");
 			}
@@ -24,10 +22,10 @@ void print_to_98(int n)
 	}
 	else
 	{
-		for (cal = n; cal < 99; cal++)
+		for (i = n; i < 99; i++)
 		{
-			printf("%d", cal);
-			if (cal != 98)
+			printf("%d", i);
+			if (i != 98)
 			{
 				printf(", ");
 			}
