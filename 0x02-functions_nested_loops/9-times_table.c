@@ -2,7 +2,7 @@
 
 /**
  * times_table - Print value *
-  * print_number - print number with _putchar in char 
+ * print_number - print number with _putchar in char
  * @number: number to be print
  * Return: 0.
  */
