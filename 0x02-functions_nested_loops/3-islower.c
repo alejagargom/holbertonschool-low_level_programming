@@ -1,12 +1,13 @@
 #include "holberton.h"
+
 /**
- * int_islower - checks for lower case characters
+ * _islower - checks for lower case characters
  * @c: variable to evaluate
  *
- *
+ * Return: 1 if it is lowercase, 0 if not
  *
  */
-int _islower(int c)
+int _islower(int c) /* char c */
 {
 	int output;
 
