@@ -1,26 +1,31 @@
 #include "holberton.h"
+
 /**
- * print_sign - sense if mom is grater less or equal than 0
- * @MOm: I check if Mm is equal to or greater than is zero or is less than 0
+ * print_sign - print the sign of a number
+ * @n: number to evaluate
  *
- * Return: 1-positive 0-zero -1-negative
+ * Return: 1 and prints + if n is greater than zero,
+ * 0 and prints 0 if n is zero
+ * -1 and prints - if n is less than zero
+ *
  */
-int print_sign(int MOm)
+int print_sign(int n)
 {
-	if (MOm < 0)
+	int output;
+
+	if (n > 0)
 	{
-		_putchar('-');
-		return (-1);
-	}
-	if (MOm == 0)
-	{
-		_putchar('0');
-		return (0);
-	}
-	if (MOm > 0)
-	{
+		output = 1;
 		_putchar('+');
-		return (1);
+	} else if (n < 0)
+	{
+		output = -1;
+		_putchar('-');
+	} else
+	{
+		output = 0;
+		_putchar('0');
 	}
-	return (2);
+
+	return (output);
 }

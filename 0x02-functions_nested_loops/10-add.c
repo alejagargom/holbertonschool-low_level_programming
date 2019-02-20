@@ -1,13 +1,13 @@
 #include "holberton.h"
 
 /**
- * add - add 2 integers
+ * add - adds two integers together
+ * @a: integer
+ * @b: integer
  *
- * @luna: first integer to add
- * @boli: second integer to add
- * Return: result of 2 integers
+ * Return: add of two integers
  */
-int add(int luna, int boli)
+int add(int a, int b)
 {
-	return (luna + boli);
+	return (a + b);
 }

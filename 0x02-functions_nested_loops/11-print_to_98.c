@@ -1,22 +1,39 @@
-#include <stdio.h>
 #include "holberton.h"
 
 /**
- * print_to_98 - if it is less it is added if it is greater it is subtracted
- * @luna: I print the numbers up to 98
+ * print_to_98 - print list nuber to 98.
+ * @n: startpoint to list
  */
-void print_to_98(int luna)
+void print_to_98(int n)
 {
-	for (; luna < 98; luna++)
+	while (n < 98 || n > 98)
 	{
-		printf("%i, ", luna);
+		print_number(n);
+		_putchar(',');
+		_putchar(32);
+		n < 98 ? n++ : n--;
 	}
-	for (; luna >= 98; luna--)
+	print_number(n);
+	_putchar(10);
+}
+/**
+ * print_number - print number with _putchar in char format
+ * @number: number to be printed
+ */
+void print_number(int number)
+{
+	if (number < 10 && number >= 0)
 	{
-		if (luna == 98)
-			printf("98");
-		else
-			printf("%i, ", luna);
+		_putchar(number + '0');
 	}
-	printf("\n");
+	else if (number < 0)
+	{
+		_putchar('-');
+		print_number(-number);
+	}
+	else
+	{
+		print_number(number / 10);
+		print_number(number % 10);
+	}
 }

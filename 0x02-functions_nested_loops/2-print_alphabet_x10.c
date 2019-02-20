@@ -1,21 +1,20 @@
 #include "holberton.h"
 
 /**
- * print_alphabet_x10 - Print with the lowercase code to z 10 times
+ * print_alphabet_x10 - print set of a..z x10
  *
+ * Return: Always 0 (Success)
  */
 void print_alphabet_x10(void)
 {
-	char lowercase_1;
-	int cont = 0;
+	int a, z;
 
-	while (cont < 10)
+	for (a = 0; a < 10; a++)
 	{
-		for (lowercase_1 = 97 ; lowercase_1 <= 122; lowercase_1++)
+		for (z = 'a'; z <= 'z'; z++)
 		{
-			_putchar(lowercase_1);
+			_putchar(z);
 		}
-		cont++;
 		_putchar('\n');
 	}
 }

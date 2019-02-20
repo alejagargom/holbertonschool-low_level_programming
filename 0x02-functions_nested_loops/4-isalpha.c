@@ -1,14 +1,22 @@
 #include "holberton.h"
+
 /**
- * _isalpha - checks Mm
- * @Mm:my variable Mm is greater than or equal to 97 and less than 122
- * in minuscule and the same in upper case Mm 65 to 90
+ * _isalpha - checks if char is [A-Za-z]
+ * @c: variable to evaluate
  *
- * Return: 1 if is Mm 0 if not
+ * Return: 1 if it is in [A-Za-z], 0 if not
+ *
  */
-int _isalpha(int Mm)
+int _isalpha(int c) /* char c */
 {
-	if ((Mm >= 97 &&  Mm <= 122) || (Mm >= 65 && Mm <= 90))
-		return (1);
-	return (0);
+	int output;
+
+	if (((c >= 'a') && (c <= 'z')) || ((c >= 'A') && (c <= 'Z')))
+	{
+		output = 1;
+	} else
+	{
+		output = 0;
+	}
+	return (output);
 }

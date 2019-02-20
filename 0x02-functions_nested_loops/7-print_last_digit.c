@@ -1,17 +1,17 @@
 #include "holberton.h"
+
 /**
- * print_last_digit -i print the last digit number
- * @eigth: integer
+ *print_last_digit - determine and print last digit
+ *@n: number to calculate
  *
- * Description: prints my last digit of a number eigth
- *
- * Return: return eigth
+ *Return: the value of the last digit
  */
-int print_last_digit(int eigth)
+int print_last_digit(int n)
 {
-	eigth = eigth % 10;
-	if (eigth < 0)
-		eigth = eigth * -1;
-	_putchar (eigth + '0');
-	return (eigth);
+	int output;
+
+	output = n % 10;
+	output = output >= 0 ? output : -output;
+	_putchar(output + 48);
+	return (output);
 }
