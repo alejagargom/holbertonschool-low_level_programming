@@ -2,7 +2,8 @@
 #include <stdio.h>
 
 /**
- *reset_to_98 - asks me the function of the pointer and that of the value to the address of n
+ *reset_to_98 - asks me the function of the pointer and that of the value
+ * to the address of n
  *
  *@n:the variable n equals 98
  */
