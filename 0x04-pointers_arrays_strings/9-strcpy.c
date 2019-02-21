@@ -3,19 +3,16 @@
  * _strcpy - copies src string to dest string
  * @dest: destination string
  * @src: source string
- * Return: no exist
+ * Return: none
  */
 char *_strcpy(char *dest, char *src)
 {
-	int lth = 0, o;
+	int o, ch;
 
-	while (src[lth])
-		lth++;
+	for (ch = 0; src[ch] != '\0'; ch++)
+		;
 
-	for (o = 0; o <= lth - 1; o++)
-	{
+	for (o = 0; o < ch; o++)
 		dest[o] = src[o];
-	}
-
 	return (dest);
 }
