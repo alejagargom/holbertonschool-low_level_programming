@@ -1,21 +1,25 @@
 #include "holberton.h"
-
 /**
- * _isupper - detect if c is upper case character
- * @c: char to evaluate
- * Return: 1 if uppercase, 0 if not
+ * _strcat - concatenates two strings
+ * @dest: final string to contain original content and src
+ * @src: string to append to dest
+ * Return: combined string (new=dest+src)
  */
-int _isupper(int c)
+char *_strcat(char *dest, char *src)
 {
-	int o;
+	int s1 = 0;
+	int s2;
 
-	if ((c >= 'A') && (c <= 'Z'))
+	while (dest[s1])
 	{
-		o = 1;
-	} else
-	{
-		o = 0;
+		s1++;
 	}
 
-	return (o);
+	for (s2 = 0; src[s2]; s2++)
+	{
+		dest[s1 + s2] = src[s2];
+	}
+	dest[s1 + s2 + 1] = '\0';
+
+	return (dest);
 }
